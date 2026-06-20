@@ -23,7 +23,6 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<GeneralResponse> createUser(@RequestBody @Valid CreateUserRequest createUserRequest) {
-        userService.createUser(createUserRequest);
         return buildResponse(
                 "User created successfully",
                 HttpStatus.CREATED,
