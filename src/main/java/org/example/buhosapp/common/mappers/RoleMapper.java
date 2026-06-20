@@ -19,4 +19,10 @@ public class RoleMapper {
                 .id(role.getId())
                 .build();
     }
+
+    public Role toEntity(RoleResponse roleResponse) {
+        return Role.builder()
+                .id(roleResponse.getId())
+                .build();
+    }
 }
