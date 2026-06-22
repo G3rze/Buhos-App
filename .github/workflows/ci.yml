@@ -47,6 +47,7 @@ jobs:
           SPRING_JPA_SHOW_SQL=false
           SPRING_JPA_HIBERNATE_DDL=update
           SPRING_JPA_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
+          SPRING_APPLICATION_NAME=app-test
           END
 
       - name: docker-compose-up
